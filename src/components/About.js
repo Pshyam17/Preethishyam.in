@@ -19,15 +19,13 @@ class About extends React.Component {
   render() {
     const one = (
       <p>
-        I'm currently a <b> Software Engineering Apprentice </b> at
-        Nike. 
+        I'm currently a <b> MS in AI student at </b> Northeastern University. 
        
       </p>
     );
     const two = (
       <p>
-        Outside of work, I'm interested in following the developments of
-        science, playing tunes on my violin and Muay Thai.
+        Outside of work, I'm interested in blogging, playing tunes on my violin and Muay Thai.
       </p>
     );
 
