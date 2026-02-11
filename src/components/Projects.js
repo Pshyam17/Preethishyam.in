@@ -24,7 +24,7 @@ class Projects extends React.Component {
   render() {
     const spotlightProjects = {
 
-      "Authentication module": {
+      "PrismAI": {
         title: "PrismAI",
         desc:
           " Building An agentic business intelligence using RAG to ground insights in large-scale datasets. ",
