@@ -23,15 +23,15 @@ class Projects extends React.Component {
   
   render() {
     const spotlightProjects = {
-      
+
       "Authentication module": {
-        title: "Authentication module",
+        title: "PrismAI",
         desc:
-          " Developed the authentication module for a native android application ",
-        techStack: "JAVA, FLUTTER",
+          " Building An agentic business intelligence using RAG to ground insights in large-scale datasets. ",
+        techStack: "PYTHON, NODE, NEXTJS",
         link: "https://github.com/Pshyam17/authentication",
         open: "https://github.com/Pshyam17/authentication",
-        image: "/assets/nomansland.png"
+        //image: "/assets/nomansland.png"
       },
       "Foggy": {
         title: "Foggy",
@@ -40,7 +40,7 @@ class Projects extends React.Component {
         techStack: "R programming",
         link: "https://github.com/Pshyam17/dementia",
         open: "https://github.com/Pshyam17/dementia",
-        image: "public/assets/AI.png"
+        //image: "public/assets/AI.png"
       },
       "Ladybug": {
         title: "Ladybug",
@@ -49,7 +49,7 @@ class Projects extends React.Component {
         techStack: "PYTHON",
         link: "https://github.com/Pshyam17/Model",
         open: "https://github.com/Pshyam17/Model",
-        image: "public/assets/MALWARE.png"
+        //image: "public/assets/MALWARE.png"
       },
       "STINC": {
         title: "stinc",
@@ -58,16 +58,7 @@ class Projects extends React.Component {
         techStack: "Java, ANDROID STUDIO",
         link: "https://github.com/Pshyam17/stinc/",
         open: "https://github.com/Pshyam17/stinc",
-        image: "/assets/conversation_3680054.png"
-      },
-      Portfolio: {
-        title: "portfolio.js",
-        desc:
-          "A small JS library that helps with clear and succinct data presentation.",
-        techStack: "NODE.JS (EXPRESS.JS)",
-        link: "https://github.com/Pshyam17/website",
-        open: "https://github.com/Pshyam17/website",
-        image: "/assets/portfolio.png"
+        //image: "/assets/conversation_3680054.png"
       }
       
     };
@@ -80,7 +71,7 @@ class Projects extends React.Component {
         techStack: "JAVA, FLUTTER",
         link: "https://github.com/Pshyam17/authentication",
         open: "https://github.com/Pshyam17/authentication",
-        image: "/assets/nomansland.png"
+        //image: "/assets/nomansland.png"
       },
       "Foggy": {
         title: "Foggy",
@@ -89,7 +80,7 @@ class Projects extends React.Component {
         techStack: "R programming",
         link: "https://github.com/Pshyam17/dementia",
         open: "https://github.com/Pshyam17/dementia",
-        image: "/assets/truth.png"
+        //image: "/assets/truth.png"
       },
       "Ladybug": {
         title: "Ladybug",
@@ -98,7 +89,7 @@ class Projects extends React.Component {
         techStack: "PYTHON",
         link: "https://github.com/Pshyam17/Model",
         open: "https://github.com/Pshyam17/Model",
-        image: "/assets/truth.png"
+        //image: "/assets/truth.png"
       },
       "STINC": {
         title: "stinc",
@@ -107,7 +98,7 @@ class Projects extends React.Component {
         techStack: "Java, ANDROID STUDIO",
         link: "https://github.com/Pshyam17/stinc/",
         open: "https://github.com/Pshyam17/stinc/",
-        image: "/assets/talltales.png"
+        //image: "/assets/talltales.png"
       },
       Portfolio: {
         title: "portfolio.js",
@@ -116,7 +107,7 @@ class Projects extends React.Component {
         techStack: "NODE.JS (EXPRESS.JS)",
         link: "https://github.com/Pshyam17/website",
         open: "https://github.com/Pshyam17/website",
-        image: "/assets/portfolio.png"
+        //image: "/assets/portfolio.png"
       }
     };
 
