@@ -81,7 +81,15 @@ const JobList = () => {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
-  const experienceItems = {    
+  const experienceItems = {  
+      "Nike": {
+    jobTitle: "Software Engineering Apprentice",
+    duration: "06/24 — 07/25",
+    desc: [
+      "Implemented a LightGBM approach for the development of a product recommendation API for North American merchants, reducing the timeline of recommendation by ~3 months.",
+      "Utilized NN clustering and decision trees for ground up feature importance analysis and selection for billions of evergreen North American products and LightGBM for forecasting."
+    ]
+  }
   };
 
   const handleChange = (event, newValue) => {
