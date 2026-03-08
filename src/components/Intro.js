@@ -1,54 +1,38 @@
 import React from "react";
-
 import "../styles/Intro.css";
-import Typist from "react-typist";
-import "react-typist/dist/Typist.css";
-import EmailRoundedIcon from "@material-ui/icons/EmailRounded";
-import FadeInSection from "./FadeInSection";
-import FractalTree from "./FractalTree";
+import { useTerminal, TermLine } from "./TerminalSection";
 
-class Intro extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      expanded: true,
-      activeKey: "1",
-      visible: true,
-    };
-    this.handleSelect = this.handleSelect.bind(this);
-  }
-  handleSelect(eventKey) {
-    this.setState({
-      activeKey: eventKey,
-    });
-  }
-  render() {
-    return (
-      <div id="intro">
-        <FractalTree></FractalTree>
-        <Typist avgTypingDelay={120}>
-          <span className="intro-title">
-            {"Hi, I'm "}
-            <span className="intro-name">{"Preethi"}</span>
-            
-          </span>
-        </Typist>
-        <FadeInSection>
-          <div className="intro-subtitle">I like to build things.</div>
-          <div className="intro-desc">
-            I'm a programmer from India fascinated by solutions with high consumer impact.
-          </div>
-          <a
-            href="mailto:p.shyam.1701@gmail.com"
-            className="intro-contact"
-          >
-            <EmailRoundedIcon></EmailRoundedIcon>
-            {" Contact me"}
-          </a>
-        </FadeInSection>
-      </div>
-    );
-  }
+const LINES = [
+  { type: "command", text: "ssh preethi@portfolio.dev", pause: 600 },
+  { type: "output",  text: "Connected · Northeastern · NeuraAI Lab · Builder", pause: 200 },
+  { type: "blank",   text: "", instant: true, pause: 100 },
+  { type: "command", text: "cat welcome.txt", pause: 400 },
+  { type: "ascii",   text: "██████╗ ██████╗ ███████╗███████╗████████╗██╗  ██╗██╗", instant: true, pause: 20 },
+  { type: "ascii",   text: "██╔══██╗██╔══██╗██╔════╝██╔════╝╚══██╔══╝██║  ██║██║", instant: true, pause: 20 },
+  { type: "ascii",   text: "██████╔╝██████╔╝█████╗  █████╗     ██║   ███████║██║", instant: true, pause: 20 },
+  { type: "ascii",   text: "██╔═══╝ ██╔══██╗██╔══╝  ██╔══╝     ██║   ██╔══██║██║", instant: true, pause: 20 },
+  { type: "ascii",   text: "██║     ██║  ██║███████╗███████╗   ██║   ██║  ██║██║", instant: true, pause: 20 },
+  { type: "ascii",   text: "╚═╝     ╚═╝  ╚═╝╚══════╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝", instant: true, pause: 300 },
+  { type: "blank",   text: "", instant: true, pause: 50 },
+  { type: "output",  text: "MS in Artificial Intelligence · Northeastern University", pause: 80 },
+  { type: "output",  text: "Research: NeuraAI Lab · ABIT · Time Series Pattern Detection", pause: 80 },
+  { type: "output",  text: "Previously: Nike (MLE) · Co-founder @ PrismAI", pause: 200 },
+  { type: "blank",   text: "", instant: true },
+  { type: "command", text: "echo $CONTACT", pause: 300 },
+  { type: "success", text: "p.shyam.1701@gmail.com · github.com/Pshyam17", pause: 300 },
+  { type: "blank",   text: "", instant: true },
+  { type: "command", text: "_", pause: 99999 },
+];
+
+export default function Intro() {
+  const { rendered, cursor, showCursor } = useTerminal(LINES, 300);
+  return (
+    <div id="intro">
+      {rendered.map((line, i) => (
+        <TermLine key={i} line={line}
+          showCursor={showCursor && i === rendered.length - 1}
+          cursor={cursor} />
+      ))}
+    </div>
+  );
 }
-
-export default Intro;
