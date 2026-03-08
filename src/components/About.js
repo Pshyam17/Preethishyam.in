@@ -29,14 +29,14 @@ class About extends React.Component {
     );
 
     const tech_stack = [
-      "Python",
-      "TensorFlow / Keras",
-      "scikit-learn + SHAP",
-      "FastAPI",
-      "React / Next.js",
-      "Java",
-      "SQL / Databricks",
-      "Docker",
+      " Python",
+      " TensorFlow / Keras",
+      " scikit-learn + SHAP",
+      " FastAPI",
+      " React / Next.js",
+      " Java",
+      " SQL / Databricks",
+      " Docker",
     ];
 
     return (
