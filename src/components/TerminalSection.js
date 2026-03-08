@@ -1,3 +1,4 @@
+import React from "react";
 import { useState, useEffect, useRef } from "react";
 
 const font = "'Fira Code', 'JetBrains Mono', monospace";
