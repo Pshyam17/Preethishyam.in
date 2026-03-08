@@ -56,7 +56,7 @@ class About extends React.Component {
             <span style={{ color: "var(--white)" }}>:~$ whoami</span>
             <br />
             <span style={{ color: "var(--cyan)" }}>{">> "}</span>
-            <span>MS AI · Northeastern · NeuraAI Lab · Builder</span>
+            <span>MS AI · Northeastern · AI researcher · Builder</span>
           </div>
 
           <div className="about-content">
@@ -75,7 +75,6 @@ class About extends React.Component {
               {[two]}
             </div>
             <div className="about-image">
-              <img alt="Preethi Shyam" src={"/assets/IMG_2027.HEIC"} />
             </div>
           </div>
         </FadeInSection>
