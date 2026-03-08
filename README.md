@@ -1,49 +1,74 @@
-# website
-personal portfolio
+# preethishyam.in
 
-<p align="center">
-  <img src="https://img.icons8.com/color/48/000000/magritte.png"/>
-</p>
-<h1 align="center">
-  preethishyam.com - v1
-</h1>
-<p align="center">
-  The first iteration of <a href="https://gazijarin.com" target="_blank">preethishyam.com</a> built with React.js leveraging Material UI.
-</p>
+> Personal portfolio — terminal-themed, ASCII art, CLI animations.
 
+[![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=black)](https://reactjs.org)
+[![Deployed](https://img.shields.io/badge/Deployed-Vercel-black?logo=vercel)](https://website-pi-liard.vercel.app)
 
-## 🛠 set-up
+---
 
-1. Install the dependencies
+## Overview
 
-   ```sh
-   npm install or yarn
-   ```
+A terminal-style personal portfolio built with React.js. Every section animates in as CLI output — commands type out character by character, output streams line by line, ASCII art drops in as a block.
 
-2. Start the development server
+**Live:** [preethishyam.in](https://website-pi-liard.vercel.app)
 
-   ```sh
-   yarn run start
-   ```
+---
 
-## 🚀 build and run for production
+## Design
+```
+preethi@portfolio:~$ cat design.md
 
-1. Generate a full static production build
+terminal bg    #0d1117   (GitHub dark)
+primary        #00ff41   (matrix green)  
+accent         #64ffda   (cyan)
+text           #e6edf3   (off-white)
+muted          #8b949e   (slate)
+font           Fira Code / JetBrains Mono
+```
 
-   ```sh
-   npm run build
-   ```
+- Scanline CRT overlay
+- Blinking block cursor
+- `git log` format for experience
+- `ls -la` format for projects
+- `whoami` format for about
+- macOS terminal window chrome + vim status bar
 
+---
 
-## 🎨 color codes
+## Sections
 
-| Color          | Hex                                                                |
-| -------------- | ------------------------------------------------------------------ |
-| Navy           | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) `#0a192f` |
-| Light Navy     | ![#112240](https://via.placeholder.com/10/0a192f?text=+) `#112240` |
-| Lightest Navy  | ![#233554](https://via.placeholder.com/10/303C55?text=+) `#233554` |
-| Slate          | ![#8892b0](https://via.placeholder.com/10/8892b0?text=+) `#8892b0` |
-| Light Slate    | ![#a8b2d1](https://via.placeholder.com/10/a8b2d1?text=+) `#a8b2d1` |
-| Lightest Slate | ![#ccd6f6](https://via.placeholder.com/10/ccd6f6?text=+) `#ccd6f6` |
-| White          | ![#e6f1ff](https://via.placeholder.com/10/e6f1ff?text=+) `#e6f1ff` |
-| Green          | ![#64ffda](https://via.placeholder.com/10/64ffda?text=+) `#64ffda` |
+| Command | Section |
+|---|---|
+| `ssh preethi@portfolio.dev` | Intro + ASCII name |
+| `whoami --verbose` | About + tech stack |
+| `ls -la ~/projects/` | Projects grid |
+| `git log --oneline` | Experience timeline |
+
+---
+
+## Stack
+
+| Layer | Technology |
+|---|---|
+| Framework | React.js (CRA) |
+| UI | Material UI v4 |
+| Animations | Custom `useTerminal` hook |
+| Fonts | Fira Code · JetBrains Mono |
+| Deployment | Vercel |
+
+---
+
+## Local Setup
+```bash
+git clone https://github.com/Pshyam17/Preethishyam.in
+cd Preethishyam.in
+npm install
+npm start
+```
+
+---
+
+## License
+
+MIT
