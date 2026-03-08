@@ -1,5 +1,4 @@
-import React from "react";
-import { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 const font = "'Fira Code', 'JetBrains Mono', monospace";
 
@@ -41,41 +40,37 @@ export function useTerminal(lines, startDelay = 0) {
       }
     }
     return () => { clearTimeout(startTimer); clearTimeout(timer.current); };
+  // eslint-disable-next-line
   }, []);
 
   const lastLine = rendered[rendered.length - 1];
   return { rendered, cursor, showCursor: lastLine && !lastLine.done };
 }
 
-export function Prompt({ path = "~" }) {
-  return (
-    <span style={{ fontFamily: font }}>
-      <span style={{ color: "var(--green)" }}>preethi</span>
-      <span style={{ color: "var(--white)" }}>@</span>
-      <span style={{ color: "var(--cyan)" }}>portfolio</span>
-      <span style={{ color: "var(--white)" }}>:</span>
-      <span style={{ color: "var(--prompt)" }}>{path}</span>
-      <span style={{ color: "var(--white)" }}>$ </span>
-    </span>
-  );
-}
-
 export function TermLine({ line, showCursor, cursor }) {
   const colorMap = {
-    command: "var(--white)", output: "var(--slate)", success: "var(--green)",
-    error: "var(--red)", info: "var(--cyan)", comment: "#444c56",
-    header: "var(--yellow)", ascii: "var(--green)", blank: "transparent",
+    command: "var(--white)",
+    output:  "var(--slate)",
+    success: "var(--green)",
+    error:   "var(--red)",
+    info:    "var(--cyan)",
+    comment: "#444c56",
+    header:  "var(--yellow)",
+    ascii:   "var(--green)",
+    blank:   "transparent",
   };
   return (
     <div style={{
-      fontFamily: font, whiteSpace: "pre",
+      fontFamily: font,
+      whiteSpace: "pre",
       fontSize: line.type === "ascii" ? 10 : 13,
       lineHeight: line.type === "ascii" ? 1.15 : 1.7,
       color: colorMap[line.type] || "var(--white)",
       minHeight: line.type === "blank" ? 8 : "auto",
     }}>
-      {line.type === "command" && <Prompt path={line.path || "~"} />}
-      {line.type === "comment" && <span style={{ color: "#444c56" }}>// </span>}
+      {line.type === "comment" && (
+        <span style={{ color: "#444c56" }}>{"// "}</span>
+      )}
       <span>{line.text}</span>
       {showCursor && (
         <span style={{
