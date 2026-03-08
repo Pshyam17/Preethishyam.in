@@ -518,3 +518,35 @@ a:hover { color: var(--green); }
   .about-image { display: none; }
   .intro-ascii { font-size: 7px; }
 }
+
+:root {
+  --bg:       #212121 !important;
+  --bg-light: #2f2f2f !important;
+  --bg-card:  #2f2f2f !important;
+  --border:   #424242 !important;
+}
+
+body { background: #212121 !important; }
+
+.nav-container {
+  background: rgba(33,33,33,0.97) !important;
+  border-bottom: 1px solid #424242 !important;
+}
+
+.projects-card {
+  background: #2f2f2f !important;
+  border: 1px solid #424242 !important;
+}
+
+.projects-card:hover {
+  background: #383838 !important;
+  border-color: var(--cyan) !important;
+}
+
+#about, #experience, #projects, #intro {
+  background: #212121 !important;
+}
+
+.MuiBox-root, .MuiTypography-root {
+  background: #212121 !important;
+}
