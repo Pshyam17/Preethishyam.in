@@ -14,17 +14,16 @@ class About extends React.Component {
   render() {
     const one = (
       <p>
-        I'm a <b>MS in Artificial Intelligence student</b> at Northeastern University,
-        conducting research at the <b>NeuraAI Lab</b> under Professor Nadim Saad on
-        multi-resolution time series pattern detection (ABIT). Previously I co-founded{" "}
+        I'm a <b> MS in Artificial Intelligence student </b> at Northeastern University,
+        currently researching context memory architectures. I co-founded{" "}
         <b>PrismAI</b>, a business intelligence platform that won a startup showcase,
-        and worked as a Software Engineering Apprentice at <b>Nike</b> building
-        production LightGBM recommendation systems.
+        and worked as a Software Engineering Apprentice at <b>Nike</b> building a
+        product recommendation api using LightGBM and other feature analysis.
       </p>
     );
     const two = (
       <p>
-        Outside of work, I play fiddle, enjoy dance, and love building things that
+        Outside of work, I love playing the fiddle, enjoy skating and a good game of chess, and love building things that
         sit at the intersection of research and real-world impact.
       </p>
     );
