@@ -11,8 +11,8 @@ const LINES = [
   { type: "ascii",   text: "╚═╝     ╚═╝  ╚═╝╚══════╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝", instant: true, pause: 300 },
   { type: "blank",   text: "", instant: true, pause: 50 },
   { type: "output",  text: "MS in Artificial Intelligence · Northeastern University", pause: 80 },
-  { type: "output",  text: "Research: NeuraAI Lab · ABIT · Time Series Pattern Detection", pause: 80 },
-  { type: "output",  text: "Previously: Nike (MLE) · Co-founder @ PrismAI", pause: 200 },
+  { type: "output",  text: "Research: Context engineering · Mathematical transforms for sales", pause: 80 },
+  { type: "output",  text: "Previously: Nike (SWE) · Lead developer/founder @ PrismAI", pause: 200 },
   { type: "blank",   text: "", instant: true },
   { type: "success", text: "p.shyam.1701@gmail.com · github.com/Pshyam17", pause: 300 },
 ];
