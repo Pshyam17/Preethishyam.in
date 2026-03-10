@@ -16,13 +16,13 @@ class Projects extends React.Component {
         desc: "Dementia risk prediction from neuroimaging variables. Random Forest + SHAP explainability on the OASIS MRI dataset.",
         techStack: "Python, scikit-learn, SHAP, FastAPI, Next.js",
         link: "https://github.com/Pshyam17/dementia",
-        open: "https://cogni-scan.vercel.app",
+        open: "https://cogni-scan-1.vercel.app/",
       },
       "Ladybug": {
         desc: "CNN-based PE malware detection via byte visualization. Raw EXE/DLL bytes converted to 150x150 grayscale images for classification.",
         techStack: "Python, TensorFlow, FastAPI, Next.js",
-        link: "https://github.com/Pshyam17/LadyBug",
-        open: "https://lady-bug-delta.vercel.app",
+        link: "https://github.com/Pshyam17/adyBug",
+        open: "https://lady-bugged.vercel.app/scan",
       },
       "PrismAI": {
         desc: "Agentic business intelligence platform using RAG to ground insights in large-scale datasets. Winner of startup showcase.",
